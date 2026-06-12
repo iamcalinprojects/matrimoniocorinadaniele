@@ -85,8 +85,8 @@ function Home() {
 function App() {
   return (
     <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/stich' element={<Stich />} />
+      {/* <Route path='/' element={<Home />} /> */}
+      <Route path='/' element={<Stich />} />
     </Routes>
   );
 }
