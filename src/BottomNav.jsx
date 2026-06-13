@@ -2,24 +2,25 @@ import React from "react";
 
 const sections = [
   {
-    id: "story",
-    label: "Storia",
-    icon: "favorite",
-  },
-  {
     id: "locations",
-    label: "Luoghi",
+    label: "Indirizzi",
     icon: "location_on",
   },
   {
+    id: "cerimonia",
+    label: "Nozze",
+    icon: "card_giftcard",
+    targetId: "locations",
+  },
+  {
     id: "gallery",
-    label: "Galleria",
+    label: "Foto",
     icon: "photo_camera",
   },
   {
-    id: "honeymoon",
-    label: "Luna di Miele",
-    icon: "flight",
+    id: "story",
+    label: "Noi",
+    icon: "favorite",
   },
 ];
 
@@ -41,8 +42,8 @@ const BottomNav = () => {
         {sections.map((section) => (
           <li key={section.id} className='flex-1'>
             <a
-              href={`#${section.id}`}
-              onClick={(e) => handleScroll(e, section.id)}
+              href={`#${section.targetId || section.id}`}
+              onClick={(e) => handleScroll(e, section.targetId || section.id)}
               className='flex flex-col items-center gap-1 text-stone-400 dark:text-stone-500 hover:text-primary dark:hover:text-[#a79ccb] transition-colors duration-200 no-underline'
             >
               <span
