@@ -703,11 +703,11 @@ const Stich = () => {
         <div className='grid md:grid-cols-12 gap-12 items-center'>
           <div className='md:col-span-5 relative'>
             <div className='absolute -inset-4 border border-tertiary/20 translate-x-4 translate-y-4 -z-10'></div>
-            <img
+            {/* <img
               className='w-full aspect-[4/5] object-cover ambient-glow'
               alt='Black and white couple portrait in a European street.'
               src='https://lh3.googleusercontent.com/aida-public/AB6AXuAu3-aFOYwPp3yAnVKfQJrlPLtP4vfzjPYu9X5YX0fVtHmR6bBw7VhMpe5kqu-GBS04BqlnIWqEA8xbwdvhLPeteSqmZ2I9-QnmXjbs-7C8tbrWNa1fF6T5StWdUTpTuE7GS5mF-MbhLvUF-oLDeaUP7yeBtwrqmuncL8sdRmh1-Z5syJtGhhAMABpNxjLm97GG7hqqsWyLxM1BqD0LNfduMlE-PlMoYtXH2WPganjnt0SsGIVFHU2ftGDjsD1DxD7HyLwZ_1hPfg'
-            />
+            /> */}
           </div>
           <div className='md:col-span-7 md:pl-12'>
             <span className='font-label-md text-primary tracking-widest uppercase block mb-4'>
