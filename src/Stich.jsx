@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 import heroImage from "./assets/IMG_3658.jpg";
 import backgroundImg from "./assets/Backgroundmatrimonio.png";
+import bgilnostro from "./assets/bgIlnostro.png";
 import laNostraGiornata from "./assets/Lanostragiornata.png";
+import chiesaimg from "./assets/chiesaimg.png";
 const Stich = () => {
   useEffect(() => {
     document.documentElement.classList.add("light");
@@ -194,7 +196,136 @@ const Stich = () => {
           </span>
         </div>
       </header>
+      <section
+        className='py-[120px] bg-surface-container-low'
+        id='locations'
+        style={{ backgroundImage: `url(${backgroundImg})` }}
+      >
+        <div className='max-w-[1200px] mx-auto px-6'>
+          <div className='text-center mb-16'>
+            <h2 className='font-headline-lg text-4xl mb-4 italic'>
+              Il nostro per sempre inizia qui
+            </h2>
+          </div>
+          <div className='grid md:grid-cols-2 gap-12'>
+            <div className='bg-white p-12 ambient-glow relative group hover:-translate-y-2 transition-transform duration-500'>
+              <div className='absolute top-0 right-0 p-5 text-primary/10 group-hover:text-primary/20 transition-colors'>
+                {/* <img
+                  src={chiesaimg}
+                  style={{
+                    width: "30%",
+                  }}
+                ></img> */}
+                <span
+                  className='material-symbols-outlined text-6xl'
+                  style={{ fontVariationSettings: "'FILL' 1" }}
+                >
+                  church
+                </span>
+              </div>
+              <span className='font-label-md text-primary tracking-widest uppercase mb-6 block'>
+                Cerimonia
+              </span>
+              <h3 className='font-headline-md mb-4'>Chiesa di San Donato</h3>
+              <p className='text-on-surface-variant font-body-lg mb-8'>
+                Unitevi a noi sotto il cielo aperto dell&apos;abbazia del XIII
+                secolo per un emozionante scambio di promesse.
+              </p>
+              <div className='space-y-4 border-t border-stone-100 pt-8'>
+                <div className='flex items-start gap-4'>
+                  <span className='material-symbols-outlined text-primary'>
+                    schedule
+                  </span>
+                  <div>
+                    <p className='font-label-md text-on-surface'>
+                      ARRIVO ALLE 14:30
+                    </p>
+                    <p className='text-sm text-stone-400'>
+                      La cerimonia inizia puntualmente alle 15:00
+                    </p>
+                  </div>
+                </div>
+                <div
+                  className='flex items-start gap-4'
+                  onClick={() => {
+                    window.open(
+                      "https://maps.app.goo.gl/dkndn4ihzd6S4Ysp8?g_st=aw",
+                    );
+                  }}
+                  style={{ cursor: "pointer" }}
+                >
+                  <span className='material-symbols-outlined text-primary'>
+                    location_on
+                  </span>
+                  <div>
+                    <p className='font-label-md text-on-surface'>
+                      FROSSASCO, TO
+                    </p>
+                    <p className='text-sm text-stone-400'>
+                      Via Famiglia Falconet, 46, 10060 Frossasco TO
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <div className='bg-white p-12 ambient-glow relative group hover:-translate-y-2 transition-transform duration-500'>
+              <div className='absolute top-0 right-0 p-8 text-primary/10 group-hover:text-primary/20 transition-colors'>
+                <span
+                  className='material-symbols-outlined text-6xl'
+                  style={{ fontVariationSettings: "'FILL' 1" }}
+                >
+                  restaurant
+                </span>
+              </div>
+              <span className='font-label-md text-primary tracking-widest uppercase mb-6 block'>
+                Ricevimento
+              </span>
+              <h3 className='font-headline-md mb-4'>Babano, Città di Torino</h3>
+              <p className='text-on-surface-variant font-body-lg mb-8'>
+                Una serata di ottima cucina toscana, balli e festeggiamenti tra
+                i giardini e la luce delle candele.
+              </p>
+              <div className='space-y-4 border-t border-stone-100 pt-8'>
+                <div className='flex items-start gap-4'>
+                  <span className='material-symbols-outlined text-primary'>
+                    schedule
+                  </span>
+                  <div>
+                    <p className='font-label-md text-on-surface'>
+                      APERITIVO ALLE 17:00
+                    </p>
+                    <p className='text-sm text-stone-400'>
+                      Cena e balli a seguire fino a notte fonda
+                    </p>
+                  </div>
+                </div>
+                <div
+                  className='flex items-start gap-4'
+                  onClick={() => {
+                    window.open(
+                      "https://maps.app.goo.gl/NMm1CbqQn6FHUHfD8?g_st=aw",
+                    );
+                  }}
+                  style={{ cursor: "pointer" }}
+                >
+                  <span className='material-symbols-outlined text-primary'>
+                    location_on
+                  </span>
+                  <div>
+                    <p className='font-label-md text-on-surface'>
+                      LA LAURENTIA HORSE HOUSE
+                    </p>
+                    <p className='text-sm text-stone-400'>
+                      Via Gerbidi, 36, 10061 Babano TO
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className='py-[50px] bg-white mx-auto relative' id='locations'>
         <div className='max-w-[1200px] '>
           <div className='text-center mb-0'>
@@ -303,113 +434,6 @@ const Stich = () => {
           </div>
         </div>
       </section>
-      <section className='py-[120px] bg-surface-container-low' id='locations'>
-        <div className='max-w-[1200px] mx-auto px-6'>
-          <div className='text-center mb-16'>
-            <h2 className='font-headline-lg text-4xl mb-4 italic'>
-              La Celebrazione
-            </h2>
-            <p className='font-label-md tracking-widest text-primary uppercase'>
-              Dettagli &amp; Indicazioni
-            </p>
-          </div>
-          <div className='grid md:grid-cols-2 gap-12'>
-            <div className='bg-white p-12 ambient-glow relative group hover:-translate-y-2 transition-transform duration-500'>
-              <div className='absolute top-0 right-0 p-8 text-primary/10 group-hover:text-primary/20 transition-colors'>
-                <span
-                  className='material-symbols-outlined text-6xl'
-                  style={{ fontVariationSettings: "'FILL' 1" }}
-                >
-                  church
-                </span>
-              </div>
-              <span className='font-label-md text-primary tracking-widest uppercase mb-6 block'>
-                Cerimonia
-              </span>
-              <h3 className='font-headline-md mb-4'>Chiesa di San Donato</h3>
-              <p className='text-on-surface-variant font-body-lg mb-8'>
-                Unitevi a noi sotto il cielo aperto dell&apos;abbazia del XIII
-                secolo per un emozionante scambio di promesse.
-              </p>
-              <div className='space-y-4 border-t border-stone-100 pt-8'>
-                <div className='flex items-start gap-4'>
-                  <span className='material-symbols-outlined text-primary'>
-                    schedule
-                  </span>
-                  <div>
-                    <p className='font-label-md text-on-surface'>
-                      ARRIVO ALLE 16:00
-                    </p>
-                    <p className='text-sm text-stone-400'>
-                      La cerimonia inizia puntualmente alle 16:30
-                    </p>
-                  </div>
-                </div>
-                <div className='flex items-start gap-4'>
-                  <span className='material-symbols-outlined text-primary'>
-                    location_on
-                  </span>
-                  <div>
-                    <p className='font-label-md text-on-surface'>
-                      FROSSASCO, TO
-                    </p>
-                    <p className='text-sm text-stone-400'>
-                      Strada Provinciale 73 bis, 53012 Chiusdino SI
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className='bg-white p-12 ambient-glow relative group hover:-translate-y-2 transition-transform duration-500'>
-              <div className='absolute top-0 right-0 p-8 text-primary/10 group-hover:text-primary/20 transition-colors'>
-                <span
-                  className='material-symbols-outlined text-6xl'
-                  style={{ fontVariationSettings: "'FILL' 1" }}
-                >
-                  restaurant
-                </span>
-              </div>
-              <span className='font-label-md text-primary tracking-widest uppercase mb-6 block'>
-                Ricevimento
-              </span>
-              <h3 className='font-headline-md mb-4'>Borgo Santo Pietro</h3>
-              <p className='text-on-surface-variant font-body-lg mb-8'>
-                Una serata di ottima cucina toscana, balli e festeggiamenti tra
-                i giardini e la luce delle candele.
-              </p>
-              <div className='space-y-4 border-t border-stone-100 pt-8'>
-                <div className='flex items-start gap-4'>
-                  <span className='material-symbols-outlined text-primary'>
-                    schedule
-                  </span>
-                  <div>
-                    <p className='font-label-md text-on-surface'>
-                      APERITIVO ALLE 18:30
-                    </p>
-                    <p className='text-sm text-stone-400'>
-                      Cena e balli a seguire fino a notte fonda
-                    </p>
-                  </div>
-                </div>
-                <div className='flex items-start gap-4'>
-                  <span className='material-symbols-outlined text-primary'>
-                    location_on
-                  </span>
-                  <div>
-                    <p className='font-label-md text-on-surface'>
-                      LOC. PALAZZETTO, SIENA
-                    </p>
-                    <p className='text-sm text-stone-400'>
-                      110, 53012 Chiusdino SI, Italy
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className='py-[120px] px-6' id='gallery'>
         <div className='max-w-[1200px] mx-auto'>
@@ -473,7 +497,7 @@ const Stich = () => {
       <section
         className='py-[120px] px-6 max-w-[1200px] mx-auto relative bg-cover bg-center bg-no-repeat'
         id='story'
-        style={{ backgroundImage: `url(${backgroundImg})` }}
+        style={{ backgroundImage: `url(${bgilnostro})` }}
       >
         <div className='grid md:grid-cols-12 gap-12 items-center'>
           <div className='md:col-span-5 relative'>
