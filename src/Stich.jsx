@@ -211,7 +211,10 @@ const Stich = () => {
       >
         <div className='max-w-[1200px] mx-auto px-6'>
           <div className='text-center mb-16'>
-            <h2 className='font-headline-lg text-2xl mb-4 '>
+            <h2
+              className='font-headline-lg text-2xl mb-4 '
+              style={{ color: "#2d2b25" }}
+            >
               IL NOSTRO PER SEMPRE INIZIA QUI
             </h2>
           </div>
@@ -344,7 +347,10 @@ const Stich = () => {
       >
         <div className='max-w-[1200px] '>
           <div className='text-center mb-0'>
-            <h2 className='font-headline-lg text-2xl mb-4 '>
+            <h2
+              className='font-headline-lg text-2xl mb-4 '
+              style={{ color: "#2d2b25" }}
+            >
               LA NOSTRA GIORNATA
             </h2>
             {/* <p className='font-label-md tracking-widest text-primary uppercase'>
@@ -463,7 +469,10 @@ const Stich = () => {
           <div className='grid md:grid-cols-1 gap-12'>
             <div className='justify-center bg-white p-6 ambient-glow relative group hover:-translate-y-1 transition-transform duration-500'>
               <div className='text-center mb-12 mx-auto'>
-                <h2 className='font-headline-lg text-2xl mb-2 '>
+                <h2
+                  className='font-headline-lg text-2xl mb-2 '
+                  style={{ color: "#2d2b25" }}
+                >
                   VIAGGIO DI NOZZE
                 </h2>
               </div>
@@ -533,7 +542,10 @@ const Stich = () => {
           <div className='grid md:grid-cols-1 gap-12'>
             <div className='justify-center bg-white p-6 pt-10 ambient-glow relative group hover:-translate-y-1 transition-transform duration-500'>
               <div className='text-center mb-16 mx-auto'>
-                <h2 className='font-headline-lg text-2xl mb-4 '>
+                <h2
+                  className='font-headline-lg text-2xl mb-4 '
+                  style={{ color: "#2d2b25" }}
+                >
                   I VOSTRI RICORDI DEL NOSTRO GIORNO
                 </h2>
               </div>
@@ -628,7 +640,12 @@ const Stich = () => {
               <span className='font-label-md text-primary tracking-widest uppercase block mb-4'>
                 Momenti Catturati
               </span>
-              <h2 className='font-headline-lg text-4xl '>La Nostra Galleria</h2>
+              <h2
+                className='font-headline-lg text-4xl '
+                style={{ color: "#2d2b25" }}
+              >
+                La Nostra Galleria
+              </h2>
             </div>
             <p className='hidden md:block font-body-md text-stone-400 max-w-xs italic text-right'>
               Una raccolta di ricordi in attesa del grande giorno.
@@ -696,7 +713,10 @@ const Stich = () => {
             <span className='font-label-md text-primary tracking-widest uppercase block mb-4'>
               {/* Il Viaggio */}
             </span>
-            <h2 className='font-headline-lg text-5xl mb-8 italic'>
+            <h2
+              className='font-headline-lg text-5xl mb-8 italic'
+              style={{ color: "#2d2b25" }}
+            >
               La Nostra Storia
             </h2>
             <div className='space-y-6 text-on-surface-variant leading-relaxed font-body-lg'>
@@ -741,7 +761,10 @@ const Stich = () => {
               <span className='font-label-md text-primary tracking-widest uppercase block mb-4'>
                 La Prossima Avventura
               </span>
-              <h2 className='font-headline-lg text-4xl mb-8 italic'>
+              <h2
+                className='font-headline-lg text-4xl mb-8 italic'
+                style={{ color: "#2d2b25" }}
+              >
                 La Nostra Luna di Miele
               </h2>
               <p className='font-body-lg text-on-surface-variant leading-relaxed mb-8'>
