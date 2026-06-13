@@ -16,11 +16,6 @@ const Stich = () => {
   useEffect(() => {
     document.documentElement.classList.add("light");
 
-    const fontLink = document.createElement("link");
-    fontLink.rel = "stylesheet";
-    fontLink.href =
-      "https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@400;500;600&display=swap";
-
     const symbolsLink = document.createElement("link");
     symbolsLink.rel = "stylesheet";
     symbolsLink.href =
@@ -84,20 +79,20 @@ const Stich = () => {
               "secondary-fixed-dim": "#ccc3d8"
             },
             fontFamily: {
-              "headline-lg": ["Noto Serif"],
-              "headline-md": ["Noto Serif"],
-              "body-md": ["Manrope"],
-              "body-lg": ["Manrope"],
-              "label-md": ["Manrope"],
-              "display-lg": ["Noto Serif"]
+              "headline-lg": ["Quattrocento", "serif"],
+              "headline-md": ["Quattrocento", "serif"],
+              "body-md": ["Sorts Mill Goudy", "serif"],
+              "body-lg": ["Sorts Mill Goudy", "serif"],
+              "label-md": ["Sorts Mill Goudy", "serif"],
+              "display-lg": ["Quattrocento", "serif"]
             },
             fontSize: {
-              "headline-lg": ["40px", { lineHeight: "1.2", letterSpacing: "0em", fontWeight: "400" }],
-              "headline-md": ["32px", { lineHeight: "1.3", fontWeight: "400" }],
+              "headline-lg": ["40px", { lineHeight: "1.2", letterSpacing: "0em", fontWeight: "700" }],
+              "headline-md": ["32px", { lineHeight: "1.3", fontWeight: "700" }],
               "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
               "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
               "label-md": ["14px", { lineHeight: "1.2", letterSpacing: "0.1em", fontWeight: "600" }],
-              "display-lg": ["64px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "400" }]
+              "display-lg": ["64px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }]
             }
           }
         }
@@ -119,14 +114,12 @@ const Stich = () => {
       }
     `;
 
-    document.head.appendChild(fontLink);
     document.head.appendChild(symbolsLink);
     document.head.appendChild(configScript);
     document.head.appendChild(tailwindScript);
     document.head.appendChild(styleTag);
 
     return () => {
-      fontLink.remove();
       symbolsLink.remove();
       configScript.remove();
       tailwindScript.remove();
@@ -184,19 +177,23 @@ const Stich = () => {
           />
         </div>
         <div className='relative z-10 text-center text-white px-4 mt-60'>
-          <h1 className='font-display-lg text-6xl md:text-9xl mb-0 italic bg-gradient-to-r from-white via-[#e8d5f5] to-[#ccbefa] bg-clip-text text-transparent'>
+          <h1
+            className='
+          font-["Allura"] text-[#8b7fb6] dark:text-[#a79ccb]
+          font-display-lg text-6xl md:text-9xl xs:text-9xl xm:text-9xl mb-0 italic bg-gradient-to-r from-white via-[#e8d5f5] to-[#ccbefa] bg-clip-text text-transparent'
+          >
             Corina &amp; Daniele
           </h1>
           <div className='w-12 h-[1px] bg-white/50 mx-auto mb-5'></div>
-          <p className='font-label-md tracking-[0.3em] uppercase mb-5 opacity-90'>
+          {/* <p className='font-label-md tracking-[0.3em] uppercase mb-5 opacity-90'>
             Insieme alle loro famiglie
-          </p>
+          </p> */}
           <p className='font-headline-md text-2xl md:text-3xl tracking-widest'>
-            DOMENICA, 05 LUGLIO, 2026
+            05 LUGLIO 2026
           </p>
-          <p className='font-label-md tracking-widest mt-4'>
+          {/* <p className='font-label-md tracking-widest mt-4'>
             FROSSASCO, ITALIA
-          </p>
+          </p> */}
         </div>
         <div className='absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce'>
           <span className='material-symbols-outlined text-white font-thin'>
@@ -210,16 +207,18 @@ const Stich = () => {
         style={{ backgroundImage: `url(${backgroundImg})` }}
       >
         <div className='max-w-[1200px] mx-auto px-6'>
-          <div className='text-center mb-16'>
+          <div className='text-center mb-40'>
             <h2
               className='font-headline-lg text-2xl mb-4 '
               style={{ color: "#2d2b25" }}
             >
-              IL NOSTRO PER SEMPRE INIZIA QUI
+              IL NOSTRO PER
+              <br />
+              SEMPRE INIZIA QUI
             </h2>
           </div>
           <div className='grid md:grid-cols-2 gap-12'>
-            <div className='bg-white p-6 ambient-glow relative group hover:-translate-y-2 transition-transform duration-500'>
+            <div className='mb-20 bg-white p-6 ambient-glow relative group hover:-translate-y-2 transition-transform duration-500'>
               <div className='absolute -top-20 -right-5 p-1 text-primary/10 group-hover:text-primary/20 transition-colors'>
                 <img
                   src={chiesaimg}
@@ -339,7 +338,7 @@ const Stich = () => {
         </div>
       </section>
       <section
-        className='py-[50px] bg-white mx-auto relative  bg-right bg-no-repeat'
+        className='pt-[50px] bg-white mx-auto relative  bg-right bg-no-repeat'
         id='locations'
         style={{
           backgroundImage: `url(${bglanostragiornata})`,
@@ -461,7 +460,7 @@ const Stich = () => {
         </div>
       </section>
       <section
-        className='py-[120px] bg-surface-container-low bg-cover bg-center bg-no-repeat'
+        className='pt-[120px] bg-surface-container-low bg-cover bg-center bg-no-repeat'
         id='locations'
         style={{ backgroundImage: `url(${backgroundImg})` }}
       >
@@ -470,13 +469,14 @@ const Stich = () => {
             <div className='justify-center bg-white p-6 ambient-glow relative group hover:-translate-y-1 transition-transform duration-500'>
               <div className='text-center mb-12 mx-auto'>
                 <h2
-                  className='font-headline-lg text-2xl mb-2 '
+                  className='font-headline-lg text-2xl mb-0 pt-8 '
                   style={{ color: "#2d2b25" }}
                 >
                   VIAGGIO DI NOZZE
                 </h2>
               </div>
               <img
+                className='-mt-10'
                 src={monaster}
                 style={{
                   width: "100%",
@@ -508,7 +508,7 @@ const Stich = () => {
                   <div className=' text-xs  space-y-4 pt-8 justify-center flex'>
                     IBAN
                   </div>
-                  <div className='text-md space-y-4  pt-3 justify-center flex'>
+                  <div className='text-xl font-serif  space-y-4  pt-3 justify-center flex'>
                     IT84Z03069459 <br /> 55100000000571
                   </div>
                 </div>
@@ -751,81 +751,6 @@ const Stich = () => {
           </div>
         </div>
       </section>
-      <section
-        className='py-[120px] bg-stone-50 overflow-hidden'
-        id='honeymoon'
-      >
-        <div className='max-w-[1200px] mx-auto px-6'>
-          <div className='grid md:grid-cols-2 gap-20 items-center'>
-            <div className='order-2 md:order-1'>
-              <span className='font-label-md text-primary tracking-widest uppercase block mb-4'>
-                La Prossima Avventura
-              </span>
-              <h2
-                className='font-headline-lg text-4xl mb-8 italic'
-                style={{ color: "#2d2b25" }}
-              >
-                La Nostra Luna di Miele
-              </h2>
-              <p className='font-body-lg text-on-surface-variant leading-relaxed mb-8'>
-                Il nostro viaggio insieme è iniziato tra la passione comune per
-                l'Oriente: tra anime, templi e ciliegi in fiore, è stato proprio
-                questo mondo a farci conoscere e sognare fin dal primo giorno.
-                Per l'inizio della nostra vita da marito e moglie, il nostro
-                desiderio più grande è quello di visitare finalmente insieme
-                questa terra. Se desiderate farci un regalo aiutateci a
-                realizzare questo sogno! Grazie di cuore per voler far parte di
-                questa nostra prima, incredibile avventura!
-              </p>
-              <div className='flex gap-12'>
-                <div>
-                  <p className='font-display-lg text-5xl text-primary opacity-30 mb-2 italic'>
-                    01
-                  </p>
-                  <p className='font-label-md uppercase tracking-widest'>
-                    Tokyo
-                  </p>
-                </div>
-                <div>
-                  <p className='font-display-lg text-5xl text-primary opacity-30 mb-2 italic'>
-                    02
-                  </p>
-                  <p className='font-label-md uppercase tracking-widest'>
-                    Kyoto
-                  </p>
-                </div>
-                <div>
-                  <p className='font-display-lg text-5xl text-primary opacity-30 mb-2 italic'>
-                    03
-                  </p>
-                  <p className='font-label-md uppercase tracking-widest'>
-                    Tokyo
-                  </p>
-                </div>
-              </div>
-              <button className='mt-12 border border-primary text-primary px-10 py-3 font-label-md tracking-widest uppercase hover:bg-primary hover:text-white transition-all duration-300'>
-                Lista Nozze
-              </button>
-            </div>
-            <div className='order-1 md:order-2 relative'>
-              <div className='absolute -top-10 -right-10 w-64 h-64 bg-secondary-container rounded-full mix-blend-multiply opacity-30 -z-10 blur-3xl'></div>
-              <div className='relative overflow-hidden ambient-glow'>
-                <img
-                  className='w-full aspect-square object-cover'
-                  alt='Luxury travel scene with boat on clear water.'
-                  src='https://lh3.googleusercontent.com/aida-public/AB6AXuD3DCApjmeoJuO6c9vZzOczP--h8DlfvDNoGMq9L4VXxUdYyfjDLyl3ymkJ94bJ-EBluZou-ovUXbNTCOFvdxvE_qBrgsjNKsgoojt9kIUWmwQUQ_EYpWcc3B26tSDfsUQ79X3xq58WSNz-nPyUswoAwMs8Zb1sYCEXWkZ1AfiW7xSUPD8m58CZS10xHvJUGPlGdr7iC9YaO6Vu9SBq8QsbvqGXI36Ck5IhTtVeMZxWFpj4comQhchpl42aoIl6J6rFJFSM07yTPQ'
-                />
-              </div>
-              <div className='absolute -bottom-6 -left-6 bg-white p-6 shadow-xl max-w-[200px]'>
-                <p className='font-body-md italic text-stone-600'>
-                  «Il mondo è un libro e chi non viaggia ne legge solo una
-                  pagina.»
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <BottomNav />
 
@@ -835,25 +760,25 @@ const Stich = () => {
         </div>
         <div className='flex gap-8'>
           <a
-            className="font-['Noto_Serif'] text-sm tracking-widest uppercase text-stone-400 hover:text-[#8b7fb6] transition-colors hover:underline decoration-[#8b7fb6] underline-offset-4"
+            className="font-['Quattrocento'] text-sm tracking-widest uppercase text-stone-400 hover:text-[#8b7fb6] transition-colors hover:underline decoration-[#8b7fb6] underline-offset-4"
             href='#'
           >
             Lista Nozze
           </a>
           <a
-            className="font-['Noto_Serif'] text-sm tracking-widest uppercase text-stone-400 hover:text-[#8b7fb6] transition-colors hover:underline decoration-[#8b7fb6] underline-offset-4"
+            className="font-['Quattrocento'] text-sm tracking-widest uppercase text-stone-400 hover:text-[#8b7fb6] transition-colors hover:underline decoration-[#8b7fb6] underline-offset-4"
             href='#'
           >
             Contattaci
           </a>
           <a
-            className="font-['Noto_Serif'] text-sm tracking-widest uppercase text-stone-400 hover:text-[#8b7fb6] transition-colors hover:underline decoration-[#8b7fb6] underline-offset-4"
+            className="font-['Quattrocento'] text-sm tracking-widest uppercase text-stone-400 hover:text-[#8b7fb6] transition-colors hover:underline decoration-[#8b7fb6] underline-offset-4"
             href='#'
           >
             Politica Regali
           </a>
         </div>
-        <p className="font-['Noto_Serif'] text-sm tracking-widest uppercase text-[#8b7fb6] dark:text-[#a79ccb] opacity-90 transition-opacity cursor-default">
+        <p className="font-['Quattrocento'] text-sm tracking-widest uppercase text-[#8b7fb6] dark:text-[#a79ccb] opacity-90 transition-opacity cursor-default">
           © 2024 Corina &amp; Daniele • Per Sempre
         </p>
         <div className='mt-4 flex gap-4 text-stone-300'>
