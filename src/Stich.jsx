@@ -4,6 +4,13 @@ import backgroundImg from "./assets/Backgroundmatrimonio.png";
 import bgilnostro from "./assets/bgIlnostro.png";
 import laNostraGiornata from "./assets/Lanostragiornata.png";
 import chiesaimg from "./assets/chiesaimg.png";
+import ricevimentoimg from "./assets/ricevimentoimg.png";
+import bglanostragiornata from "./assets/bglanostragiornata.png";
+import monaster from "./assets/monaster.png";
+import youngjap from "./assets/youngjap.png";
+import bgiban from "./assets/bgiban2.png";
+import mainimage from "./assets/mainimage.png";
+import inostriricordiimg from "./assets/inostriricordiimg.png";
 const Stich = () => {
   useEffect(() => {
     document.documentElement.classList.add("light");
@@ -169,9 +176,9 @@ const Stich = () => {
       <header className='relative h-screen flex items-center justify-center overflow-hidden'>
         <div className='absolute inset-0 z-0'>
           <img
-            className='w-full h-full object-cover brightness-[0.85]'
+            className='w-full h-full object-cover  brightness-[0.85]'
             alt='Romantic couple in a Mediterranean garden at dusk.'
-            src={heroImage}
+            src={mainimage}
             // src='https://lh3.googleusercontent.com/aida-public/AB6AXuBmdbMx4ByWL8ifDmTA7Ag0ZuPSzVdyYCaumMgwfoO6jp15Jx7L4YzZZRBNfEQwslfxbsckCnJPYp4m3ZLTgyxtQ6NP2YqQ642sxZeGwE1YooN95DHJSb2t_FcMVViHr4Lol08cTndHQZPTea2PBk1FlX2yF4Md019EHbhl74DHFjg0Kyz36lvccFf-UOUvVhCIg_P_2aIUUJyyS_TQLD3CsIiufF2NkDm-mzUUdtO8pblnxGcmJE4nuu64A8SscnNgAOPNYWBg9Q'
           />
         </div>
@@ -203,26 +210,29 @@ const Stich = () => {
       >
         <div className='max-w-[1200px] mx-auto px-6'>
           <div className='text-center mb-16'>
-            <h2 className='font-headline-lg text-4xl mb-4 italic'>
-              Il nostro per sempre inizia qui
+            <h2 className='font-headline-lg text-2xl mb-4 '>
+              IL NOSTRO PER SEMPRE INIZIA QUI
             </h2>
           </div>
           <div className='grid md:grid-cols-2 gap-12'>
-            <div className='bg-white p-12 ambient-glow relative group hover:-translate-y-2 transition-transform duration-500'>
-              <div className='absolute -top-20 -right-10 p-1 text-primary/10 group-hover:text-primary/20 transition-colors'>
+            <div className='bg-white p-6 ambient-glow relative group hover:-translate-y-2 transition-transform duration-500'>
+              <div className='absolute -top-20 -right-5 p-1 text-primary/10 group-hover:text-primary/20 transition-colors'>
                 <img
                   src={chiesaimg}
                   style={{
                     width: "35%",
                     marginLeft: "auto",
+                    marginTop: "-5%",
                     display: "block",
                   }}
                 />
               </div>
-              <span className='font-label-md text-primary tracking-widest uppercase mb-6 block'>
+              <span className='font-label-md text-xl tracking-widest uppercase mb-6 block'>
                 Cerimonia
               </span>
-              <h3 className='font-headline-md mb-4'>Chiesa di San Donato</h3>
+              <h3 className='font-headline-md mb-4 text-xl uppercase'>
+                Chiesa di San Donato
+              </h3>
               <p className='text-on-surface-variant font-body-lg mb-8'>
                 Unitevi a noi sotto il cielo aperto dell&apos;abbazia del XIII
                 secolo per un emozionante scambio di promesse.
@@ -266,13 +276,15 @@ const Stich = () => {
             </div>
 
             <div className='bg-white p-12 ambient-glow relative group hover:-translate-y-2 transition-transform duration-500'>
-              <div className='absolute top-0 right-0 p-8 text-primary/10 group-hover:text-primary/20 transition-colors'>
-                <span
-                  className='material-symbols-outlined text-6xl'
-                  style={{ fontVariationSettings: "'FILL' 1" }}
-                >
-                  restaurant
-                </span>
+              <div className='absolute -top-20 -right-6 p-1 text-primary/10 group-hover:text-primary/20 transition-colors'>
+                <img
+                  src={ricevimentoimg}
+                  style={{
+                    width: "35%",
+                    marginLeft: "auto",
+                    display: "block",
+                  }}
+                />
               </div>
               <span className='font-label-md text-primary tracking-widest uppercase mb-6 block'>
                 Ricevimento
@@ -322,18 +334,29 @@ const Stich = () => {
           </div>
         </div>
       </section>
-      <section className='py-[50px] bg-white mx-auto relative' id='locations'>
+      <section
+        className='py-[50px] bg-white mx-auto relative  bg-right bg-no-repeat'
+        id='locations'
+        style={{
+          backgroundImage: `url(${bglanostragiornata})`,
+        }}
+      >
         <div className='max-w-[1200px] '>
           <div className='text-center mb-0'>
-            <h2 className='font-headline-lg text-4xl mb-4 italic'>
-              La nostra giornata
+            <h2 className='font-headline-lg text-2xl mb-4 '>
+              LA NOSTRA GIORNATA
             </h2>
             {/* <p className='font-label-md tracking-widest text-primary uppercase'>
               Dettagli &amp; Indicazioni
             </p> */}
           </div>
           <div className='grid md:grid-cols-2 gap-12'>
-            <img src={laNostraGiornata}></img>
+            <img
+              src={laNostraGiornata}
+              style={{
+                zIndex: 0,
+              }}
+            ></img>
             {/* <div className='bg-white p-12 ambient-glow relative group hover:-translate-y-2 transition-transform duration-500'>
               <div className='absolute top-0 right-0 p-8 text-primary/10 group-hover:text-primary/20 transition-colors'>
                 <span
@@ -430,7 +453,173 @@ const Stich = () => {
           </div>
         </div>
       </section>
+      <section
+        className='py-[120px] bg-surface-container-low bg-cover bg-center bg-no-repeat'
+        id='locations'
+        style={{ backgroundImage: `url(${backgroundImg})` }}
+      >
+        <div className='max-w-[1200px] mx-auto px-6'>
+          <div className='grid md:grid-cols-1 gap-12'>
+            <div className='justify-center bg-white p-6 ambient-glow relative group hover:-translate-y-1 transition-transform duration-500'>
+              <div className='text-center mb-12 mx-auto'>
+                <h2 className='font-headline-lg text-2xl mb-2 '>
+                  VIAGGIO DI NOZZE
+                </h2>
+              </div>
+              <img
+                src={monaster}
+                style={{
+                  width: "100%",
+                  // height: "auto",
+                }}
+              ></img>
+              <p className='text-on-surface-variant  font-body-lg mb-8'>
+                Per l'inizio della nostra vita da marito e moglie, il nostro
+                desiderio più grande è quello di visitare finalmente insieme
+                questa terra.
+              </p>
+              <p className='text-on-surface-variant font-body-lg mb-8'>
+                Il nostro viaggio insieme è iniziato tra la passione comune per
+                l'Oriente: tra anime, templi e ciliegi in fiore, è stato proprio
+                questo mondo a farci conoscere e sognare fin dal primo giorno.
+              </p>
+              <p className='text-on-surface-variant font-body-lg mb-8'>
+                Se desiderate farci un regalo aiutateci a realizzare questo
+                sogno!
+              </p>
+              <div
+                className='bg-cover bg-center bg-no-repeat'
+                style={{
+                  backgroundImage: `url(${bgiban})`,
+                  backgroundSize: "100%",
+                }}
+              >
+                <div>
+                  <div className=' text-xs  space-y-4 pt-8 justify-center flex'>
+                    IBAN
+                  </div>
+                  <div className='text-md space-y-4  pt-3 justify-center flex'>
+                    IT84Z03069459 <br /> 55100000000571
+                  </div>
+                </div>
 
+                <div className='space-y-2  pt-4 pb-8 justify-center flex text-xs'>
+                  Corina Anghelus
+                </div>
+              </div>
+
+              <p className='text-on-surface-variant font-body-lg mb-8'>
+                Grazie di cuore per voler far parte di questa nostra prima,
+                incredibile avventura!
+              </p>
+              <img
+                src={youngjap}
+                style={{
+                  width: "100%",
+                  height: "auto",
+                }}
+              ></img>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        className='py-[120px] bg-surface-container-low bg-cover bg-center bg-no-repeat'
+        id='locations'
+        style={{ backgroundImage: `url(${backgroundImg})` }}
+      >
+        <div className='max-w-[1200px] mx-auto px-6'>
+          <div className='grid md:grid-cols-1 gap-12'>
+            <div className='justify-center bg-white p-6 pt-10 ambient-glow relative group hover:-translate-y-1 transition-transform duration-500'>
+              <div className='text-center mb-16 mx-auto'>
+                <h2 className='font-headline-lg text-2xl mb-4 '>
+                  I VOSTRI RICORDI DEL NOSTRO GIORNO
+                </h2>
+              </div>
+
+              <p className='text-on-surface-variant  font-body-lg mb-8'>
+                Aiutateci a raccogliere tutti i momenti più belli del matrimonio
+                caricando qui le vostre foto e i vostri video.
+              </p>
+
+              <div className=' flex justify-center bg-cover bg-center bg-no-repeat'>
+                <img
+                  src={inostriricordiimg}
+                  style={{
+                    width: "60%",
+                    height: "auto",
+                  }}
+                ></img>
+              </div>
+
+              <button
+                className='bg-primary text-on-primary px-8 py-2 rounded font-label-md tracking-widest uppercase hover:opacity-90 transition-all mt-6 mb-12 uppercase block mx-auto
+                gradient-to-b from-primary to-white bg-size-200 bg-pos-0 hover:bg-pos-100'
+                onClick={() => {}}
+              >
+                carica file
+              </button>
+            </div>
+            {/* 
+            <div className='bg-white p-12 ambient-glow relative group hover:-translate-y-2 transition-transform duration-500'>
+              <div className='absolute -top-20 -right-6 p-1 text-primary/10 group-hover:text-primary/20 transition-colors'>
+                <img
+                  src={ricevimentoimg}
+                  style={{
+                    width: "35%",
+                    marginLeft: "auto",
+                    display: "block",
+                  }}
+                />
+              </div>
+              <span className='font-label-md text-primary tracking-widest uppercase mb-6 block'>
+                Ricevimento
+              </span>
+              <h3 className='font-headline-md mb-4'>Babano, Città di Torino</h3>
+              <p className='text-on-surface-variant font-body-lg mb-8'>
+                Una serata di ottima cucina toscana, balli e festeggiamenti tra
+                i giardini e la luce delle candele.
+              </p>
+              <div className='space-y-4 border-t border-stone-100 pt-8'>
+                <div className='flex items-start gap-4'>
+                  <span className='material-symbols-outlined text-primary'>
+                    schedule
+                  </span>
+                  <div>
+                    <p className='font-label-md text-on-surface'>
+                      APERITIVO ALLE 17:00
+                    </p>
+                    <p className='text-sm text-stone-400'>
+                      Cena e balli a seguire fino a notte fonda
+                    </p>
+                  </div>
+                </div>
+                <div
+                  className='flex items-start gap-4'
+                  onClick={() => {
+                    window.open(
+                      "https://maps.app.goo.gl/NMm1CbqQn6FHUHfD8?g_st=aw",
+                    );
+                  }}
+                  style={{ cursor: "pointer" }}
+                >
+                  <span className='material-symbols-outlined text-primary'>
+                    location_on
+                  </span>
+                  <div>
+                    <p className='font-label-md text-on-surface'>
+                      LA LAURENTIA HORSE HOUSE
+                    </p>
+                    <p className='text-sm text-stone-400'>
+                      Via Gerbidi, 36, 10061 Babano TO
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div> */}
+          </div>
+        </div>
+      </section>
       <section className='py-[120px] px-6' id='gallery'>
         <div className='max-w-[1200px] mx-auto'>
           <div className='flex justify-between items-end mb-16'>
@@ -438,9 +627,7 @@ const Stich = () => {
               <span className='font-label-md text-primary tracking-widest uppercase block mb-4'>
                 Momenti Catturati
               </span>
-              <h2 className='font-headline-lg text-4xl italic'>
-                La Nostra Galleria
-              </h2>
+              <h2 className='font-headline-lg text-4xl '>La Nostra Galleria</h2>
             </div>
             <p className='hidden md:block font-body-md text-stone-400 max-w-xs italic text-right'>
               Una raccolta di ricordi in attesa del grande giorno.
