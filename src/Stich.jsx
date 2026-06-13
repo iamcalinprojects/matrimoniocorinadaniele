@@ -11,6 +11,7 @@ import youngjap from "./assets/youngjap.png";
 import bgiban from "./assets/bgiban2.png";
 import mainimage from "./assets/mainimage.png";
 import inostriricordiimg from "./assets/inostriricordiimg.png";
+import BottomNav from "./BottomNav";
 const Stich = () => {
   useEffect(() => {
     document.documentElement.classList.add("light");
@@ -803,7 +804,9 @@ const Stich = () => {
         </div>
       </section>
 
-      <footer className='bg-stone-50 dark:bg-stone-900 w-full py-12 border-t border-[#d5dad0] dark:border-stone-800 flex flex-col items-center gap-6 px-4 text-center'>
+      <BottomNav />
+
+      <footer className='bg-stone-50 dark:bg-stone-900 w-full py-12 border-t border-[#d5dad0] dark:border-stone-800 flex flex-col items-center gap-6 px-4 text-center pb-24 md:pb-12'>
         <div className='text-lg font-serif italic text-stone-800 dark:text-stone-200'>
           Corina &amp; Daniele
         </div>
