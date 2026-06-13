@@ -197,7 +197,7 @@ const Stich = () => {
         </div>
       </header>
       <section
-        className='py-[120px] bg-surface-container-low'
+        className='py-[120px] bg-surface-container-low bg-cover bg-center bg-no-repeat'
         id='locations'
         style={{ backgroundImage: `url(${backgroundImg})` }}
       >
@@ -209,19 +209,15 @@ const Stich = () => {
           </div>
           <div className='grid md:grid-cols-2 gap-12'>
             <div className='bg-white p-12 ambient-glow relative group hover:-translate-y-2 transition-transform duration-500'>
-              <div className='absolute top-0 right-0 p-5 text-primary/10 group-hover:text-primary/20 transition-colors'>
-                {/* <img
+              <div className='absolute -top-20 -right-10 p-1 text-primary/10 group-hover:text-primary/20 transition-colors'>
+                <img
                   src={chiesaimg}
                   style={{
-                    width: "30%",
+                    width: "35%",
+                    marginLeft: "auto",
+                    display: "block",
                   }}
-                ></img> */}
-                <span
-                  className='material-symbols-outlined text-6xl'
-                  style={{ fontVariationSettings: "'FILL' 1" }}
-                >
-                  church
-                </span>
+                />
               </div>
               <span className='font-label-md text-primary tracking-widest uppercase mb-6 block'>
                 Cerimonia
