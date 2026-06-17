@@ -9,7 +9,7 @@ import bglanostragiornata from "./assets/bglanostragiornata.png";
 import monaster from "./assets/monaster.png";
 import youngjap from "./assets/youngjap.png";
 import bgiban from "./assets/bgiban2.png";
-import mainimage from "./assets/bgHeadBorgoSantoPietro.png";
+import mainimage from "./assets/bgMainMobile.png";
 import inostriricordiimg from "./assets/inostriricordiimg.png";
 import brittanyFont from "./assets/Brittany.ttf";
 import BottomNav from "./BottomNav";
