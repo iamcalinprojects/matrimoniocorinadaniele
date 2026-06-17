@@ -247,10 +247,10 @@ const Stich = () => {
                   </span>
                   <div>
                     <p className='font-label-md text-on-surface'>
-                      ARRIVO ALLE 14:30
+                      CERIMONIA ALLE 15:00
                     </p>
                     <p className='text-sm text-stone-400'>
-                      La cerimonia inizia puntualmente alle 15:00
+                      Vi consigliamo di arrivare alle 14:30
                     </p>
                   </div>
                 </div>
@@ -292,10 +292,12 @@ const Stich = () => {
               <span className='font-label-md text-primary tracking-widest uppercase mb-6 block'>
                 Ricevimento
               </span>
-              <h3 className='font-headline-md mb-4'>Babano, Città di Torino</h3>
+              <h3 className='font-headline-md mb-4 text-xl uppercase'>
+                LA LAURENTIA
+              </h3>
               <p className='text-on-surface-variant font-body-lg mb-8'>
-                Una serata di ottima cucina toscana, balli e festeggiamenti tra
-                i giardini e la luce delle candele.
+                Una serata di ottima cucina, balli e festeggiamenti tra i
+                giardini e la luce delle candele.
               </p>
               <div className='space-y-4 border-t border-stone-100 pt-8'>
                 <div className='flex items-start gap-4'>
@@ -324,9 +326,7 @@ const Stich = () => {
                     location_on
                   </span>
                   <div>
-                    <p className='font-label-md text-on-surface'>
-                      LA LAURENTIA HORSE HOUSE
-                    </p>
+                    <p className='font-label-md text-on-surface'>BABANO, TO</p>
                     <p className='text-sm text-stone-400'>
                       Via Gerbidi, 36, 10061 Babano TO
                     </p>
@@ -460,80 +460,6 @@ const Stich = () => {
         </div>
       </section>
       <section
-        className='pt-[120px] bg-surface-container-low bg-cover bg-center bg-no-repeat'
-        id='locations'
-        style={{ backgroundImage: `url(${backgroundImg})` }}
-      >
-        <div className='max-w-[1200px] mx-auto px-6'>
-          <div className='grid md:grid-cols-1 gap-12'>
-            <div className='justify-center bg-white p-6 ambient-glow relative group hover:-translate-y-1 transition-transform duration-500'>
-              <div className='text-center mb-12 mx-auto'>
-                <h2
-                  className='font-headline-lg text-2xl mb-0 pt-8 '
-                  style={{ color: "#2d2b25" }}
-                >
-                  VIAGGIO DI NOZZE
-                </h2>
-              </div>
-              <img
-                className='-mt-10'
-                src={monaster}
-                style={{
-                  width: "100%",
-                  // height: "auto",
-                }}
-              ></img>
-              <p className='text-on-surface-variant  font-body-lg mb-8'>
-                Per l'inizio della nostra vita da marito e moglie, il nostro
-                desiderio più grande è quello di visitare finalmente insieme
-                questa terra.
-              </p>
-              <p className='text-on-surface-variant font-body-lg mb-8'>
-                Il nostro viaggio insieme è iniziato tra la passione comune per
-                l'Oriente: tra anime, templi e ciliegi in fiore, è stato proprio
-                questo mondo a farci conoscere e sognare fin dal primo giorno.
-              </p>
-              <p className='text-on-surface-variant font-body-lg mb-8'>
-                Se desiderate farci un regalo aiutateci a realizzare questo
-                sogno!
-              </p>
-              <div
-                className='bg-cover bg-center bg-no-repeat'
-                style={{
-                  backgroundImage: `url(${bgiban})`,
-                  backgroundSize: "100%",
-                }}
-              >
-                <div>
-                  <div className=' text-xs  space-y-4 pt-8 justify-center flex'>
-                    IBAN
-                  </div>
-                  <div className='text-xl font-serif  space-y-4  pt-3 justify-center flex'>
-                    IT84Z03069459 <br /> 55100000000571
-                  </div>
-                </div>
-
-                <div className='space-y-2  pt-4 pb-8 justify-center flex text-xs'>
-                  Corina Anghelus
-                </div>
-              </div>
-
-              <p className='text-on-surface-variant font-body-lg mb-8'>
-                Grazie di cuore per voler far parte di questa nostra prima,
-                incredibile avventura!
-              </p>
-              <img
-                src={youngjap}
-                style={{
-                  width: "100%",
-                  height: "auto",
-                }}
-              ></img>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
         className='py-[120px] bg-surface-container-low bg-cover bg-center bg-no-repeat'
         id='locations'
         style={{ backgroundImage: `url(${backgroundImg})` }}
@@ -552,7 +478,7 @@ const Stich = () => {
 
               <p className='text-on-surface-variant  font-body-lg mb-8'>
                 Aiutateci a raccogliere tutti i momenti più belli del matrimonio
-                caricando qui le vostre foto e i vostri video.
+                caricando qui le vostre foto e video.
               </p>
 
               <div className=' flex justify-center bg-cover bg-center bg-no-repeat'>
@@ -633,68 +559,83 @@ const Stich = () => {
           </div>
         </div>
       </section>
-      <section className='py-[120px] px-6' id='gallery'>
-        <div className='max-w-[1200px] mx-auto'>
-          <div className='flex justify-between items-end mb-16'>
-            <div>
-              <span className='font-label-md text-primary tracking-widest uppercase block mb-4'>
-                Momenti Catturati
-              </span>
-              <h2
-                className='font-headline-lg text-4xl '
-                style={{ color: "#2d2b25" }}
-              >
-                La Nostra Galleria
-              </h2>
-            </div>
-            <p className='hidden md:block font-body-md text-stone-400 max-w-xs italic text-right'>
-              Una raccolta di ricordi in attesa del grande giorno.
-            </p>
-          </div>
-          <div className='grid grid-cols-1 md:grid-cols-12 gap-6'>
-            <div className='md:col-span-8 relative group overflow-hidden bg-stone-100'>
+      <section
+        className='pt-[120px] bg-surface-container-low bg-cover bg-center bg-no-repeat'
+        id='locations'
+        style={{ backgroundImage: `url(${backgroundImg})` }}
+      >
+        <div className='max-w-[1200px] mx-auto px-6'>
+          <div className='grid md:grid-cols-1 gap-12'>
+            <div className='justify-center bg-white p-6 ambient-glow relative group hover:-translate-y-1 transition-transform duration-500'>
+              <div className='text-center mb-12 mx-auto'>
+                <h2
+                  className='font-headline-lg text-2xl mb-0 pt-8 '
+                  style={{ color: "#2d2b25" }}
+                >
+                  VIAGGIO DI NOZZE
+                </h2>
+              </div>
               <img
-                className='w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-105'
-                alt='Couple overlooking Tuscany at sunrise.'
-                src='https://lh3.googleusercontent.com/aida-public/AB6AXuB7BNqtyl3KJjlEt0dvi8HefUm1GnXH6wTkShOMSxLRI7SP6F0yIH262MW1XAK9O-3zuH2LDsuBeqIw4IHC9n-tSxpTGMmsyFmnOtxZmT7dUjyQUOziedm4IMBwJ_82vuIfvDZRYVoXac2rkboN3mtdqYtYtcbI7Z4_buQdDBoQrIVUsSs-Yhrhb7bJmzzW2xbDIQPKjiUaOflFpUocOxSWZW67oDHyZpgs5K7XAAqNSZqxEo45_ytEg1EGexquN_EFTIUhyMX_zg'
-              />
-              <div className='absolute inset-0 flex items-center justify-center'>
-                <div className='w-20 h-20 rounded-full bg-white/30 backdrop-blur-md flex items-center justify-center cursor-pointer hover:bg-white/50 transition-all'>
-                  <span
-                    className='material-symbols-outlined text-white text-4xl'
-                    style={{ fontVariationSettings: "'FILL' 1" }}
-                  >
-                    play_arrow
-                  </span>
+                className='-mt-10'
+                src={monaster}
+                style={{
+                  width: "100%",
+                  // height: "auto",
+                }}
+              ></img>
+              <p className='text-on-surface-variant  font-body-lg mb-8'>
+                Il nostro viaggio insieme è iniziato tra la passione comune per
+                l'Oriente: tra anime, templi e ciliegi in fiore, è stato proprio
+                questo mondo a farci conoscere e sognare fin dal primo giorno.
+              </p>
+              <p className='text-on-surface-variant font-body-lg mb-8'>
+                Per l'inizio della nostra vita da marito e moglie, il nostro
+                desiderio più grande è quello di visitare finalmente insieme il
+                Giappone!
+              </p>
+              <p className='text-on-surface-variant font-body-lg mb-8'>
+                Se desiderate farci un regalo aiutateci a realizzare questo
+                sogno!
+              </p>
+              <div
+                className='bg-cover bg-center bg-no-repeat'
+                style={{
+                  backgroundImage: `url(${bgiban})`,
+                  backgroundSize: "100%",
+                }}
+              >
+                <div>
+                  <div className=' text-xs  space-y-4 pt-8 justify-center flex'>
+                    IBAN
+                  </div>
+                  <div className='text-sm font-serif  space-y-4  pt-3 justify-center flex'>
+                    IT84Z0306945955100000000571
+                  </div>
+                </div>
+
+                <div className='space-y-2  pt-4 pb-8 justify-center flex text-xs'>
+                  Corina Anghelus
                 </div>
               </div>
-            </div>
-            <div className='md:col-span-4 flex flex-col gap-2'>
-              <div className='h-1/2 group overflow-hidden'>
+
+              <p className='text-on-surface-variant font-body-lg mb-8'>
+                Grazie di cuore per voler far parte di questa nostra prima,
+                incredibile avventura!
+              </p>
+              <div className=' flex justify-center'>
                 <img
-                  className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-105'
-                  alt='Close-up of intertwined hands and engagement ring.'
-                  src='https://lh3.googleusercontent.com/aida-public/AB6AXuAGzzKYc5caj5cQq6cELJjdwiKqPBIWohiFNGEXGIxTkhkobmI_sd6Xx18DcUDtilWu8Si59tFQ75iEnyVa8JYeZBZ6CAQwUwfBEL2VDei-Zilt_cYdr9hWf9b_thgGkptKa7BiXpyT2We2rQCDf4pr6-5Xfrdji624frJsyFOb7x8EUQimgFwh2xpCcr02-_EpSHp2v9MbDZknHTGLx280a7ZAO6GuSC-3V4ivUYGChePKinnXdFhXkQFXr2E8i_vCf3LNJOJVEQ'
-                />
+                  src={youngjap}
+                  style={{
+                    width: "40%",
+                    height: "auto",
+                  }}
+                ></img>
               </div>
-            </div>
-            <div className='md:col-span-4 group overflow-hidden'>
-              <img
-                className='w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-105'
-                alt='Couple toasting in a vineyard.'
-                src='https://lh3.googleusercontent.com/aida-public/AB6AXuDIucupI4nPEnd_uMqWCW_X2omeNW2d19Zrh0Gj0-HheDVWoxZXd_rTFPrbvfsNcsh-cL4ilpMxWrNmw_3X8vQVmu1rIvld5k6q9_DkscXQC7Ehn_SqyiUV0EySq11u0ol91bwbRYNDRCSStICyffy9mRwu22SaiwDq2UHCdpomgV9mwmsGCrCdv2T7_9MF2zAZpSzJDg2gecD5QL8KtndyAZm0jAmcByceJEXqTZcCoKt8uZ6oAQOfa-1HWfWtbfmZj6f8ZKLpgA'
-              />
-            </div>
-            <div className='md:col-span-8 group overflow-hidden'>
-              <img
-                className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-105'
-                alt='Cypress-lined road in Tuscany.'
-                src='https://lh3.googleusercontent.com/aida-public/AB6AXuDXNRXdhlDxE8qYD827fN7a-7nQb0-bf7bxnwOrNSRUYungkYT6ASfk1yOMdlWpiqOJ0gm417amH-JvbjDruf1iU_E3ViEvsdKK2GNFlzktU7VOQfFF-2tH2jocGqPOo1yXLsIkd2NYvhiwVnqHO8iFgryJjNLj6K8qLhp63_CQ1d25HvgJ-ev-20HfKWtc5bVr9mEuk02o4XDS9xF1hXAmpzKSPiEFXmZ_90UmhMNnl8KqFaUpyWAhefEu6DyQLLDNTm9UXgMtWQ'
-              />
             </div>
           </div>
         </div>
       </section>
+
       <section
         className='py-[120px] px-6 max-w-[1200px] mx-auto relative bg-cover bg-center bg-no-repeat'
         id='story'
@@ -746,6 +687,68 @@ const Stich = () => {
                 className='w-32 opacity-20'
                 alt='Lavender botanical illustration.'
                 src='https://lh3.googleusercontent.com/aida-public/AB6AXuB6IKvbp9vztBpr7Z3g9Oqv9-IIGf_4IxxBor8OLvWEA2Kbqc78_cbJbX93DHMxodeoPnigqyXwuZ695k0hk6EN0_vuOPCRuIb3gUj5G7t7OmSbo4G0BhKNwV7W2va-ZQdQ-wWmY9TUnPChWc4I3ieeFwHaftPL4jigr7I09nEu2_VF22AZjvYxL8qKY6Ei4eP3HYcAHdp0fe8RFtFq8fL6BWozDApJb3dVssUnCGjBlCBogM5GfW7qoK3RWKe9mI19GAltWiZmIw'
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className='py-[120px] px-6' id='gallery'>
+        <div className='max-w-[1200px] mx-auto'>
+          <div className='flex justify-between items-end mb-16'>
+            <div>
+              <span className='font-label-md text-primary tracking-widest uppercase block mb-4'>
+                {/* Momenti Catturati */}
+              </span>
+              <h2
+                className='font-headline-lg text-4xl '
+                style={{ color: "#2d2b25" }}
+              >
+                {/* La Nostra Galleria */}
+              </h2>
+            </div>
+            <p className='hidden md:block font-body-md text-stone-400 max-w-xs italic text-right'>
+              Una raccolta di ricordi in attesa del grande giorno.
+            </p>
+          </div>
+          <div className='grid grid-cols-1 md:grid-cols-12 gap-6'>
+            <div className='md:col-span-8 relative group overflow-hidden bg-stone-100'>
+              <img
+                className='w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-105'
+                alt='Couple overlooking Tuscany at sunrise.'
+                src='https://lh3.googleusercontent.com/aida-public/AB6AXuB7BNqtyl3KJjlEt0dvi8HefUm1GnXH6wTkShOMSxLRI7SP6F0yIH262MW1XAK9O-3zuH2LDsuBeqIw4IHC9n-tSxpTGMmsyFmnOtxZmT7dUjyQUOziedm4IMBwJ_82vuIfvDZRYVoXac2rkboN3mtdqYtYtcbI7Z4_buQdDBoQrIVUsSs-Yhrhb7bJmzzW2xbDIQPKjiUaOflFpUocOxSWZW67oDHyZpgs5K7XAAqNSZqxEo45_ytEg1EGexquN_EFTIUhyMX_zg'
+              />
+              <div className='absolute inset-0 flex items-center justify-center'>
+                <div className='w-20 h-20 rounded-full bg-white/30 backdrop-blur-md flex items-center justify-center cursor-pointer hover:bg-white/50 transition-all'>
+                  <span
+                    className='material-symbols-outlined text-white text-4xl'
+                    style={{ fontVariationSettings: "'FILL' 1" }}
+                  >
+                    play_arrow
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className='md:col-span-4 flex flex-col gap-2'>
+              <div className='h-1/2 group overflow-hidden'>
+                <img
+                  className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-105'
+                  alt='Close-up of intertwined hands and engagement ring.'
+                  src='https://lh3.googleusercontent.com/aida-public/AB6AXuAGzzKYc5caj5cQq6cELJjdwiKqPBIWohiFNGEXGIxTkhkobmI_sd6Xx18DcUDtilWu8Si59tFQ75iEnyVa8JYeZBZ6CAQwUwfBEL2VDei-Zilt_cYdr9hWf9b_thgGkptKa7BiXpyT2We2rQCDf4pr6-5Xfrdji624frJsyFOb7x8EUQimgFwh2xpCcr02-_EpSHp2v9MbDZknHTGLx280a7ZAO6GuSC-3V4ivUYGChePKinnXdFhXkQFXr2E8i_vCf3LNJOJVEQ'
+                />
+              </div>
+            </div>
+            <div className='md:col-span-4 group overflow-hidden'>
+              <img
+                className='w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-105'
+                alt='Couple toasting in a vineyard.'
+                src='https://lh3.googleusercontent.com/aida-public/AB6AXuDIucupI4nPEnd_uMqWCW_X2omeNW2d19Zrh0Gj0-HheDVWoxZXd_rTFPrbvfsNcsh-cL4ilpMxWrNmw_3X8vQVmu1rIvld5k6q9_DkscXQC7Ehn_SqyiUV0EySq11u0ol91bwbRYNDRCSStICyffy9mRwu22SaiwDq2UHCdpomgV9mwmsGCrCdv2T7_9MF2zAZpSzJDg2gecD5QL8KtndyAZm0jAmcByceJEXqTZcCoKt8uZ6oAQOfa-1HWfWtbfmZj6f8ZKLpgA'
+              />
+            </div>
+            <div className='md:col-span-8 group overflow-hidden'>
+              <img
+                className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-105'
+                alt='Cypress-lined road in Tuscany.'
+                src='https://lh3.googleusercontent.com/aida-public/AB6AXuDXNRXdhlDxE8qYD827fN7a-7nQb0-bf7bxnwOrNSRUYungkYT6ASfk1yOMdlWpiqOJ0gm417amH-JvbjDruf1iU_E3ViEvsdKK2GNFlzktU7VOQfFF-2tH2jocGqPOo1yXLsIkd2NYvhiwVnqHO8iFgryJjNLj6K8qLhp63_CQ1d25HvgJ-ev-20HfKWtc5bVr9mEuk02o4XDS9xF1hXAmpzKSPiEFXmZ_90UmhMNnl8KqFaUpyWAhefEu6DyQLLDNTm9UXgMtWQ'
               />
             </div>
           </div>
