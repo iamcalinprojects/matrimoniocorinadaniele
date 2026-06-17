@@ -189,8 +189,8 @@ const Stich = () => {
             className='
             pt-[0.5em]
             pb-[0.5em]
-          font-["Brittany"] text-white
-          font-display-lg text-6xl md:text-9xl xs:text-9xl xm:text-9xl mb-0 '
+          font-["Brittany"] text-[#faf1e1]
+          text-6xl md:text-6xl xs:text-6xl xm:text-6xl mb-0 '
           >
             Corina &amp; Daniele
           </h1>
@@ -198,7 +198,7 @@ const Stich = () => {
           {/* <p className='font-label-md tracking-[0.3em] uppercase mb-5 opacity-90'>
             Insieme alle loro famiglie
           </p> */}
-          <p className='font-headline-md text-2xl md:text-3xl tracking-widest'>
+          <p className='font-headline-md text-2xl md:text-3xl tracking-widest text-[#faf1e1]'>
             05 LUGLIO 2026
           </p>
           {/* <p className='font-label-md tracking-widest mt-4'>
