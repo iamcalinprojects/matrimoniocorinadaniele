@@ -9,8 +9,9 @@ import bglanostragiornata from "./assets/bglanostragiornata.png";
 import monaster from "./assets/monaster.png";
 import youngjap from "./assets/youngjap.png";
 import bgiban from "./assets/bgiban2.png";
-import mainimage from "./assets/mainimage.png";
+import mainimage from "./assets/bgHeadBorgoSantoPietro.png";
 import inostriricordiimg from "./assets/inostriricordiimg.png";
+import brittanyFont from "./assets/Brittany.ttf";
 import BottomNav from "./BottomNav";
 const Stich = () => {
   useEffect(() => {
@@ -106,6 +107,13 @@ const Stich = () => {
     const styleTag = document.createElement("style");
     styleTag.id = "stich-inline-styles";
     styleTag.textContent = `
+      @font-face {
+        font-family: 'Brittany';
+        src: url('${brittanyFont}') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
       .material-symbols-outlined {
         font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
       }
@@ -179,8 +187,10 @@ const Stich = () => {
         <div className='relative z-10 text-center text-white px-4 mt-60'>
           <h1
             className='
-          font-["Allura"] text-[#8b7fb6] dark:text-[#a79ccb]
-          font-display-lg text-6xl md:text-9xl xs:text-9xl xm:text-9xl mb-0 italic bg-gradient-to-r from-white via-[#e8d5f5] to-[#ccbefa] bg-clip-text text-transparent'
+            pt-[0.5em]
+            pb-[0.5em]
+          font-["Brittany"] text-white
+          font-display-lg text-6xl md:text-9xl xs:text-9xl xm:text-9xl mb-0 '
           >
             Corina &amp; Daniele
           </h1>
