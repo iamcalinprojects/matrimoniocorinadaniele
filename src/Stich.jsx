@@ -576,7 +576,7 @@ const Stich = () => {
         </div>
       </section>
       <section
-        className='pt-[120px] bg-surface-container-low bg-cover bg-center bg-no-repeat'
+        className='pt-[0px] bg-surface-container-low bg-cover bg-center bg-no-repeat'
         id='locations'
         style={{ backgroundImage: `url(${backgroundImg})` }}
       >
