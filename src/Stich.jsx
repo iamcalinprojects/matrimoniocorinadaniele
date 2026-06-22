@@ -1,10 +1,12 @@
 import { useEffect } from "react";
 import heroImage from "./assets/IMG_3658.jpg";
 import backgroundImg from "./assets/Backgroundmatrimonio.png";
+import bgMatrimonio from "./assets/Backgroundmatrimonio.png";
 import bgilnostro from "./assets/bgIlnostro.png";
-import laNostraGiornata from "./assets/Lanostragiornata.png";
+import laNostraGiornata from "./assets/bgImgLaNostraGiornata.png";
 import chiesaimg from "./assets/chiesaimg.png";
 import ricevimentoimg from "./assets/ricevimentoimg.png";
+import bgUpNostraGiornata from "./assets/bgUpNostraGiornata.png";
 import bglanostragiornata from "./assets/bglanostragiornata.png";
 import monaster from "./assets/monaster.png";
 import youngjap from "./assets/youngjap.png";
@@ -347,12 +349,21 @@ const Stich = () => {
           </div>
         </div>
       </section>
-      <section
-        className='pt-[50px] bg-white mx-auto relative  bg-right bg-no-repeat'
-        id='locations'
+      <div
+        className='w-full h-24'
         style={{
-          backgroundImage: `url(${bglanostragiornata})`,
+          backgroundImage: `url(${bgUpNostraGiornata})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
+      ></div>
+
+      <section
+        className={`pt-[5px] mx-auto relative 
+        `}
+        style={{ backgroundColor: "#fafafa" }}
+        id='locations'
       >
         <div className='max-w-[1200px] '>
           <div className='text-center mb-0'>
@@ -366,13 +377,8 @@ const Stich = () => {
               Dettagli &amp; Indicazioni
             </p> */}
           </div>
-          <div className='grid md:grid-cols-2 gap-12'>
-            <img
-              src={laNostraGiornata}
-              style={{
-                zIndex: 0,
-              }}
-            ></img>
+          <div className=' w-full flex justify-center items-center'>
+            <img src={laNostraGiornata}></img>
             {/* <div className='bg-white p-12 ambient-glow relative group hover:-translate-y-2 transition-transform duration-500'>
               <div className='absolute top-0 right-0 p-8 text-primary/10 group-hover:text-primary/20 transition-colors'>
                 <span
