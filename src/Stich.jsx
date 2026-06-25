@@ -15,6 +15,15 @@ import mainimage from "./assets/bgMainMobile.png";
 import inostriricordiimg from "./assets/inostriricordiimg.png";
 import brittanyFont from "./assets/Brittany.ttf";
 import BottomNav from "./BottomNav";
+import img1 from "./assets/NostraStoriaImg/img1.jpeg";
+import img2 from "./assets/NostraStoriaImg/img2.jpeg";
+import img3 from "./assets/NostraStoriaImg/img3.jpeg";
+import img4 from "./assets/NostraStoriaImg/img4.jpeg";
+import img5 from "./assets/NostraStoriaImg/img5.jpeg";
+import img6 from "./assets/NostraStoriaImg/img6.jpeg";
+import img7 from "./assets/NostraStoriaImg/img7.jpeg";
+import img8 from "./assets/NostraStoriaImg/img8.jpeg";
+import img9 from "./assets/NostraStoriaImg/img9.jpeg";
 const Stich = () => {
   useEffect(() => {
     document.documentElement.classList.add("light");
@@ -678,24 +687,104 @@ const Stich = () => {
             </h2>
             <div className='space-y-6 text-on-surface-variant leading-relaxed font-body-lg'>
               <p>
-                Tutto è iniziato per caso, in un pomeriggio di pioggia, quando
-                un ombrello condiviso ha dato vita a una conversazione che
-                nessuno dei due voleva interrompere. Da quel primo caffè alle
-                passeggiate al tramonto in giro per il mondo, il nostro viaggio
-                è stato segnato dalle risate condivise e da una complicità
-                autentica.
+                Tutto è iniziato in modo semplice, durante la festa di
+                compleanno di un amico comune. Tra la musica, le chiacchiere e
+                le risate le nostre strade si sono incrociate per la prima
+                volta. È bastato poco per capire che avevamo molto più in comune
+                di quanto potessimo immaginare: la stessa scintilla negli occhi
+                e una lista infinita di passioni da condividere.
               </p>
+              <div className='flex flex-row items-start gap-[8px]'>
+                <div className='flex-1 group overflow-hidden'>
+                  <img
+                    className='w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105'
+                    alt='Close-up of intertwined hands and engagement ring.'
+                    src={img4}
+                  />
+                </div>
+                <div className='flex-1 group overflow-hidden'>
+                  <img
+                    className='w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105'
+                    alt='Couple overlooking Tuscany at sunrise.'
+                    src={img3}
+                  />
+                </div>
+                <div className='flex-1 group overflow-hidden'>
+                  <img
+                    className='w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105'
+                    alt='Couple overlooking Tuscany at sunrise.'
+                    src={img1}
+                  />
+                </div>
+              </div>
               <p>
-                Negli anni abbiamo costruito una vita fondata sulla curiosità,
-                sulla gentilezza e sul profondo rispetto reciproco. Daniele ha
-                chiesto la mano di Corina in una mattina tranquilla sulla
-                Costiera Amalfitana, avvolti dal profumo dei limoni e dal dolce
-                ritmo del Mediterraneo.
+                Abbiamo iniziato a viaggiare per il mondo con lo zaino in
+                spalla, collezionando timbri sui passaporti e tramonti
+                indimenticabili. Tra una partenza e una serie tv da finire,
+                abbiamo capito che il viaggio più bello lo stavamo facendo
+                insieme, giorno dopo giorno.
               </p>
+              <div className='flex flex-row items-start gap-[8px]'>
+                <div className='flex-1 group overflow-hidden'>
+                  <img
+                    className='w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105'
+                    alt='Close-up of intertwined hands and engagement ring.'
+                    src={img5}
+                  />
+                </div>
+                <div className='flex-1 group overflow-hidden'>
+                  <img
+                    className='w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105'
+                    alt='Couple overlooking Tuscany at sunrise.'
+                    src={img6}
+                  />
+                </div>
+                <div className='flex-1 group overflow-hidden'>
+                  <img
+                    className='w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105'
+                    alt='Couple overlooking Tuscany at sunrise.'
+                    src={img7}
+                  />
+                </div>
+              </div>
+
               <p>
-                Ora vi invitiamo a condividere con noi la nostra più grande
-                avventura, nel cuore della campagna toscana, dove la nostra
-                storia trova finalmente la sua casa.
+                Il momento più magico è arrivato durante un viaggio in Provenza.
+                Circondati dai colori accesi e dal profumo dei campi di lavanda,
+                il tempo è sembrato fermarsi. È stato lì, in uno scenario da
+                favola, che è arrivata la proposta più dolce e l'inizio del
+                nostro capitolo più importante. Ovviamente, la risposta è stata
+                un "Sì" gigante.
+              </p>
+              <div className='flex flex-row items-start gap-[8px]'>
+                <div className='flex-1 group overflow-hidden'>
+                  <img
+                    className='w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105'
+                    alt='Close-up of intertwined hands and engagement ring.'
+                    src={img9}
+                  />
+                </div>
+                <div className='flex-1 group overflow-hidden'>
+                  <img
+                    className='w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105'
+                    alt='Couple overlooking Tuscany at sunrise.'
+                    src={img8}
+                  />
+                </div>
+                <div className='flex-1 group overflow-hidden'>
+                  <img
+                    className='w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105'
+                    alt='Couple overlooking Tuscany at sunrise.'
+                    src={img2}
+                  />
+                </div>
+              </div>
+
+              <p>
+                Oggi siamo pronti a iniziare l'avventura più grande e a
+                scambiarci la promessa più importante della nostra vita. Non
+                vediamo l'ora di festeggiare, ridere e ballare insieme a tutte
+                le persone che amiamo. Il conto alla rovescia è iniziato!
               </p>
             </div>
             <div className='mt-10'>
@@ -703,68 +792,6 @@ const Stich = () => {
                 className='w-32 opacity-20'
                 alt='Lavender botanical illustration.'
                 src='https://lh3.googleusercontent.com/aida-public/AB6AXuB6IKvbp9vztBpr7Z3g9Oqv9-IIGf_4IxxBor8OLvWEA2Kbqc78_cbJbX93DHMxodeoPnigqyXwuZ695k0hk6EN0_vuOPCRuIb3gUj5G7t7OmSbo4G0BhKNwV7W2va-ZQdQ-wWmY9TUnPChWc4I3ieeFwHaftPL4jigr7I09nEu2_VF22AZjvYxL8qKY6Ei4eP3HYcAHdp0fe8RFtFq8fL6BWozDApJb3dVssUnCGjBlCBogM5GfW7qoK3RWKe9mI19GAltWiZmIw'
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className='py-[120px] px-6' id='gallery'>
-        <div className='max-w-[1200px] mx-auto'>
-          <div className='flex justify-between items-end mb-16'>
-            <div>
-              <span className='font-label-md text-primary tracking-widest uppercase block mb-4'>
-                {/* Momenti Catturati */}
-              </span>
-              <h2
-                className='font-headline-lg text-4xl '
-                style={{ color: "#2d2b25" }}
-              >
-                {/* La Nostra Galleria */}
-              </h2>
-            </div>
-            <p className='hidden md:block font-body-md text-stone-400 max-w-xs italic text-right'>
-              Una raccolta di ricordi in attesa del grande giorno.
-            </p>
-          </div>
-          <div className='grid grid-cols-1 md:grid-cols-12 gap-6'>
-            <div className='md:col-span-8 relative group overflow-hidden bg-stone-100'>
-              <img
-                className='w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-105'
-                alt='Couple overlooking Tuscany at sunrise.'
-                src='https://lh3.googleusercontent.com/aida-public/AB6AXuB7BNqtyl3KJjlEt0dvi8HefUm1GnXH6wTkShOMSxLRI7SP6F0yIH262MW1XAK9O-3zuH2LDsuBeqIw4IHC9n-tSxpTGMmsyFmnOtxZmT7dUjyQUOziedm4IMBwJ_82vuIfvDZRYVoXac2rkboN3mtdqYtYtcbI7Z4_buQdDBoQrIVUsSs-Yhrhb7bJmzzW2xbDIQPKjiUaOflFpUocOxSWZW67oDHyZpgs5K7XAAqNSZqxEo45_ytEg1EGexquN_EFTIUhyMX_zg'
-              />
-              <div className='absolute inset-0 flex items-center justify-center'>
-                <div className='w-20 h-20 rounded-full bg-white/30 backdrop-blur-md flex items-center justify-center cursor-pointer hover:bg-white/50 transition-all'>
-                  <span
-                    className='material-symbols-outlined text-white text-4xl'
-                    style={{ fontVariationSettings: "'FILL' 1" }}
-                  >
-                    play_arrow
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className='md:col-span-4 flex flex-col gap-2'>
-              <div className='h-1/2 group overflow-hidden'>
-                <img
-                  className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-105'
-                  alt='Close-up of intertwined hands and engagement ring.'
-                  src='https://lh3.googleusercontent.com/aida-public/AB6AXuAGzzKYc5caj5cQq6cELJjdwiKqPBIWohiFNGEXGIxTkhkobmI_sd6Xx18DcUDtilWu8Si59tFQ75iEnyVa8JYeZBZ6CAQwUwfBEL2VDei-Zilt_cYdr9hWf9b_thgGkptKa7BiXpyT2We2rQCDf4pr6-5Xfrdji624frJsyFOb7x8EUQimgFwh2xpCcr02-_EpSHp2v9MbDZknHTGLx280a7ZAO6GuSC-3V4ivUYGChePKinnXdFhXkQFXr2E8i_vCf3LNJOJVEQ'
-                />
-              </div>
-            </div>
-            <div className='md:col-span-4 group overflow-hidden'>
-              <img
-                className='w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-105'
-                alt='Couple toasting in a vineyard.'
-                src='https://lh3.googleusercontent.com/aida-public/AB6AXuDIucupI4nPEnd_uMqWCW_X2omeNW2d19Zrh0Gj0-HheDVWoxZXd_rTFPrbvfsNcsh-cL4ilpMxWrNmw_3X8vQVmu1rIvld5k6q9_DkscXQC7Ehn_SqyiUV0EySq11u0ol91bwbRYNDRCSStICyffy9mRwu22SaiwDq2UHCdpomgV9mwmsGCrCdv2T7_9MF2zAZpSzJDg2gecD5QL8KtndyAZm0jAmcByceJEXqTZcCoKt8uZ6oAQOfa-1HWfWtbfmZj6f8ZKLpgA'
-              />
-            </div>
-            <div className='md:col-span-8 group overflow-hidden'>
-              <img
-                className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-105'
-                alt='Cypress-lined road in Tuscany.'
-                src='https://lh3.googleusercontent.com/aida-public/AB6AXuDXNRXdhlDxE8qYD827fN7a-7nQb0-bf7bxnwOrNSRUYungkYT6ASfk1yOMdlWpiqOJ0gm417amH-JvbjDruf1iU_E3ViEvsdKK2GNFlzktU7VOQfFF-2tH2jocGqPOo1yXLsIkd2NYvhiwVnqHO8iFgryJjNLj6K8qLhp63_CQ1d25HvgJ-ev-20HfKWtc5bVr9mEuk02o4XDS9xF1hXAmpzKSPiEFXmZ_90UmhMNnl8KqFaUpyWAhefEu6DyQLLDNTm9UXgMtWQ'
               />
             </div>
           </div>
