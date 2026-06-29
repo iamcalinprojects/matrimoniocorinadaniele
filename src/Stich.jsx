@@ -195,7 +195,7 @@ const Stich = () => {
             // src='https://lh3.googleusercontent.com/aida-public/AB6AXuBmdbMx4ByWL8ifDmTA7Ag0ZuPSzVdyYCaumMgwfoO6jp15Jx7L4YzZZRBNfEQwslfxbsckCnJPYp4m3ZLTgyxtQ6NP2YqQ642sxZeGwE1YooN95DHJSb2t_FcMVViHr4Lol08cTndHQZPTea2PBk1FlX2yF4Md019EHbhl74DHFjg0Kyz36lvccFf-UOUvVhCIg_P_2aIUUJyyS_TQLD3CsIiufF2NkDm-mzUUdtO8pblnxGcmJE4nuu64A8SscnNgAOPNYWBg9Q'
           />
         </div>
-        <div className='relative z-10 text-center text-white px-4 mt-[260px]'>
+        <div className='relative z-10 text-center text-white px-4 mt-[270px]'>
           <h1
             className='
             pt-[0.5em]
