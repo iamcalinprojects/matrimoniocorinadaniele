@@ -803,7 +803,7 @@ const Stich = () => {
 
       <footer className='bg-stone-50 dark:bg-stone-900 w-full py-12 border-t border-[#d5dad0] dark:border-stone-800 flex flex-col items-center gap-6 px-4 text-center pb-24 md:pb-12'>
         <p className="font-['Quattrocento'] text-sm tracking-widest uppercase text-[#8b7fb6] dark:text-[#a79ccb] opacity-90 transition-opacity cursor-default">
-          © 2024 Corina &amp; Daniele • Per Sempre
+          © 2026 Corina &amp; Daniele • Per Sempre
         </p>
         {/* <div className='mt-4 flex gap-4 text-stone-300'>
           <span className='material-symbols-outlined hover:text-primary transition-colors cursor-pointer'>
