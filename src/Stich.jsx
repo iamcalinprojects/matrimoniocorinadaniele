@@ -148,7 +148,7 @@ const Stich = () => {
 
   return (
     <div className='bg-background text-on-background font-body-md overflow-x-hidden'>
-      <nav className='fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-950/80 backdrop-blur-md border-b border-stone-200/50 dark:border-stone-800/50 shadow-sm shadow-[#8b7fb6]/5 flex justify-between items-center px-6 py-4 md:px-12'>
+      <nav className='fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-950/80 backdrop-blur-md border-b border-stone-200/50 dark:border-stone-800/50 shadow-sm shadow-[#8b7fb6]/5 flex justify-center items-center px-6 py-4 md:px-12 '>
         <div className='text-2xl font-serif italic text-[#8b7fb6] dark:text-[#a79ccb] font-headline-lg'>
           Corina &amp; Daniele
         </div>
@@ -181,9 +181,9 @@ const Stich = () => {
             RSVP
           </button>
         </div>
-        <button className='md:hidden text-primary'>
+        {/* <button className='md:hidden text-primary'>
           <span className='material-symbols-outlined'>menu</span>
-        </button>
+        </button> */}
       </nav>
 
       <header className='relative h-screen flex items-center justify-center overflow-hidden'>
