@@ -148,38 +148,39 @@ const Stich = () => {
 
   return (
     <div className='bg-background text-on-background font-body-md overflow-x-hidden'>
-      <nav className='fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-950/80 backdrop-blur-md border-b border-stone-200/50 dark:border-stone-800/50 shadow-sm shadow-[#8b7fb6]/5 flex justify-center items-center px-6 py-4 md:px-12 '>
+      <nav className='fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-950/80 backdrop-blur-md border-b border-stone-200/50 dark:border-stone-800/50 shadow-sm shadow-[#8b7fb6]/5 flex justify-center lg:justify-start items-center px-6 py-4 md:px-12 '>
         <div className='text-2xl font-serif italic text-[#8b7fb6] dark:text-[#a79ccb] font-headline-lg'>
           Corina &amp; Daniele
         </div>
         <div className='hidden md:flex gap-8 items-center'>
           <a
             className='text-stone-500 dark:text-stone-400 font-medium hover:text-[#8b7fb6] transition-colors font-label-md tracking-widest uppercase'
-            href='#story'
+            href='#locations'
           >
-            La Nostra Storia
+            Indirizzi
           </a>
           <a
             className='text-stone-500 dark:text-stone-400 font-medium hover:text-[#8b7fb6] transition-colors font-label-md tracking-widest uppercase'
-            href='#locations'
+            href='#story'
           >
-            Luoghi
+            Noi
           </a>
+
           <a
             className='text-stone-500 dark:text-stone-400 font-medium hover:text-[#8b7fb6] transition-colors font-label-md tracking-widest uppercase'
             href='#gallery'
           >
-            Galleria
+            Foto
           </a>
           <a
             className='text-stone-500 dark:text-stone-400 font-medium hover:text-[#8b7fb6] transition-colors font-label-md tracking-widest uppercase'
-            href='#honeymoon'
+            href='#gift'
           >
-            Luna di Miele
+            Regalo
           </a>
-          <button className='bg-primary text-on-primary px-8 py-2 rounded-full font-label-md tracking-widest uppercase hover:opacity-90 transition-all'>
+          {/* <button className='bg-primary text-on-primary px-8 py-2 rounded-full font-label-md tracking-widest uppercase hover:opacity-90 transition-all'>
             RSVP
-          </button>
+          </button> */}
         </div>
         {/* <button className='md:hidden text-primary'>
           <span className='material-symbols-outlined'>menu</span>
