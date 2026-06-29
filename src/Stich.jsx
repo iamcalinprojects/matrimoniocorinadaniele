@@ -239,8 +239,10 @@ const Stich = () => {
             </h2>
           </div>
           <div className='grid md:grid-cols-2 gap-12'>
-            <div className='mb-20 bg-white p-6 ambient-glow relative group hover:-translate-y-2 transition-transform duration-500'>
-              <div className='absolute -top-20 -right-5 p-1 text-primary/10 group-hover:text-primary/20 transition-colors'>
+            <div className='bg-white p-12 ambient-glow relative group hover:-translate-y-2 transition-transform duration-500'>
+              <div className='absolute -top-20 -right-6 p-1 text-primary/10 group-hover:text-primary/20 transition-colors'>
+                {/* <div className='mb-20 bg-white p-6 ambient-glow relative group hover:-translate-y-2 transition-transform duration-500'>
+              <div className='absolute -top-20 -right-5 p-1 text-primary/10 group-hover:text-primary/20 transition-colors'> */}
                 <img
                   src={chiesaimg}
                   style={{
