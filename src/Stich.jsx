@@ -486,7 +486,7 @@ const Stich = () => {
       </section>
       <section
         className='py-[120px] bg-surface-container-low bg-cover bg-center bg-no-repeat'
-        id='locations'
+        id='gallery'
         style={{ backgroundImage: `url(${backgroundImg})` }}
       >
         <div className='max-w-[1200px] mx-auto px-6'>
@@ -586,7 +586,7 @@ const Stich = () => {
       </section>
       <section
         className='pt-[0px] bg-surface-container-low bg-cover bg-center bg-no-repeat'
-        id='locations'
+        id='gift'
         style={{ backgroundImage: `url(${backgroundImg})` }}
       >
         <div className='max-w-[1200px] mx-auto px-6'>
@@ -676,9 +676,7 @@ const Stich = () => {
             /> */}
           </div>
           <div className='md:col-span-7 md:pl-12'>
-            <span className='font-label-md text-primary tracking-widest uppercase block mb-4'>
-              {/* Il Viaggio */}
-            </span>
+            <span className='font-label-md text-primary tracking-widest uppercase block mb-4'></span>
             <h2
               className='font-headline-lg text-5xl mb-8 italic'
               style={{ color: "#2d2b25" }}
@@ -787,13 +785,13 @@ const Stich = () => {
                 le persone che amiamo. Il conto alla rovescia è iniziato!
               </p>
             </div>
-            <div className='mt-10'>
+            {/* <div className='mt-10'>
               <img
                 className='w-32 opacity-20'
                 alt='Lavender botanical illustration.'
                 src='https://lh3.googleusercontent.com/aida-public/AB6AXuB6IKvbp9vztBpr7Z3g9Oqv9-IIGf_4IxxBor8OLvWEA2Kbqc78_cbJbX93DHMxodeoPnigqyXwuZ695k0hk6EN0_vuOPCRuIb3gUj5G7t7OmSbo4G0BhKNwV7W2va-ZQdQ-wWmY9TUnPChWc4I3ieeFwHaftPL4jigr7I09nEu2_VF22AZjvYxL8qKY6Ei4eP3HYcAHdp0fe8RFtFq8fL6BWozDApJb3dVssUnCGjBlCBogM5GfW7qoK3RWKe9mI19GAltWiZmIw'
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -801,33 +799,10 @@ const Stich = () => {
       <BottomNav />
 
       <footer className='bg-stone-50 dark:bg-stone-900 w-full py-12 border-t border-[#d5dad0] dark:border-stone-800 flex flex-col items-center gap-6 px-4 text-center pb-24 md:pb-12'>
-        <div className='text-lg font-serif italic text-stone-800 dark:text-stone-200'>
-          Corina &amp; Daniele
-        </div>
-        <div className='flex gap-8'>
-          <a
-            className="font-['Quattrocento'] text-sm tracking-widest uppercase text-stone-400 hover:text-[#8b7fb6] transition-colors hover:underline decoration-[#8b7fb6] underline-offset-4"
-            href='#'
-          >
-            Lista Nozze
-          </a>
-          <a
-            className="font-['Quattrocento'] text-sm tracking-widest uppercase text-stone-400 hover:text-[#8b7fb6] transition-colors hover:underline decoration-[#8b7fb6] underline-offset-4"
-            href='#'
-          >
-            Contattaci
-          </a>
-          <a
-            className="font-['Quattrocento'] text-sm tracking-widest uppercase text-stone-400 hover:text-[#8b7fb6] transition-colors hover:underline decoration-[#8b7fb6] underline-offset-4"
-            href='#'
-          >
-            Politica Regali
-          </a>
-        </div>
         <p className="font-['Quattrocento'] text-sm tracking-widest uppercase text-[#8b7fb6] dark:text-[#a79ccb] opacity-90 transition-opacity cursor-default">
           © 2024 Corina &amp; Daniele • Per Sempre
         </p>
-        <div className='mt-4 flex gap-4 text-stone-300'>
+        {/* <div className='mt-4 flex gap-4 text-stone-300'>
           <span className='material-symbols-outlined hover:text-primary transition-colors cursor-pointer'>
             favorite
           </span>
@@ -837,7 +812,7 @@ const Stich = () => {
           <span className='material-symbols-outlined hover:text-primary transition-colors cursor-pointer'>
             mail
           </span>
-        </div>
+        </div> */}
       </footer>
     </div>
   );

@@ -7,16 +7,17 @@ const sections = [
     icon: "location_on",
   },
   {
-    id: "cerimonia",
-    label: "Nozze",
-    icon: "card_giftcard",
-    targetId: "locations",
-  },
-  {
     id: "gallery",
     label: "Foto",
     icon: "photo_camera",
   },
+  {
+    id: "gift",
+    label: "Regalo",
+    icon: "card_giftcard",
+    targetId: "locations",
+  },
+
   {
     id: "story",
     label: "Noi",
