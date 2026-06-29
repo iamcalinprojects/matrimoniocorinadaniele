@@ -15,7 +15,6 @@ const sections = [
     id: "gift",
     label: "Regalo",
     icon: "card_giftcard",
-    targetId: "locations",
   },
 
   {
