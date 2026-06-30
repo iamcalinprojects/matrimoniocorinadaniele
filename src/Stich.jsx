@@ -3,7 +3,7 @@ import heroImage from "./assets/IMG_3658.jpg";
 import backgroundImg from "./assets/Backgroundmatrimonio.png";
 import bgMatrimonio from "./assets/Backgroundmatrimonio.png";
 import bgilnostro from "./assets/bgIlnostro.png";
-import laNostraGiornata from "./assets/Lanostragiornata.png";
+import laNostraGiornata from "./assets/bgImgLaNostraGiornata.png";
 import chiesaimg from "./assets/chiesaimg.png";
 import ricevimentoimg from "./assets/ricevimentoimg.png";
 import bgUpNostraGiornata from "./assets/bgUpNostraGiornata.png";
@@ -519,9 +519,11 @@ const Stich = () => {
 
               <div className=' flex justify-center bg-cover bg-center bg-no-repeat'>
                 <img
-                  src={laNostraGiornata}
-                  className='w-full h-auto max-w-full'
-                  alt='La Nostra Giornata'
+                  src={inostriricordiimg}
+                  style={{
+                    width: "60%",
+                    height: "auto",
+                  }}
                 ></img>
               </div>
 
