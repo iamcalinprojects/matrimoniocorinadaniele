@@ -3,7 +3,7 @@ import heroImage from "./assets/IMG_3658.jpg";
 import backgroundImg from "./assets/Backgroundmatrimonio.png";
 import bgMatrimonio from "./assets/Backgroundmatrimonio.png";
 import bgilnostro from "./assets/bgIlnostro.png";
-import laNostraGiornata from "./assets/bgImgLaNostraGiornata.png";
+import laNostraGiornata from "./assets/BgLaNostraGiornatabig.png";
 import chiesaimg from "./assets/chiesaimg.png";
 import ricevimentoimg from "./assets/ricevimentoimg.png";
 import bgUpNostraGiornata from "./assets/bgUpNostraGiornata.png";
