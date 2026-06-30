@@ -3,7 +3,7 @@ import heroImage from "./assets/IMG_3658.jpg";
 import backgroundImg from "./assets/Backgroundmatrimonio.png";
 import bgMatrimonio from "./assets/Backgroundmatrimonio.png";
 import bgilnostro from "./assets/bgIlnostro.png";
-import laNostraGiornata from "./assets/bgImgLaNostraGiornata.png";
+import laNostraGiornata from "./assets/Lanostragiornata.png";
 import chiesaimg from "./assets/chiesaimg.png";
 import ricevimentoimg from "./assets/ricevimentoimg.png";
 import bgUpNostraGiornata from "./assets/bgUpNostraGiornata.png";
@@ -240,7 +240,7 @@ const Stich = () => {
             </h2>
           </div>
           <div className='grid md:grid-cols-2 gap-12'>
-            <div className='bg-white p-12 ambient-glow relative group hover:-translate-y-2 transition-transform duration-500'>
+            <div className='bg-white p-12 mb-20 ambient-glow relative group hover:-translate-y-2 transition-transform duration-500'>
               <div className='absolute -top-20 -right-6 p-1 text-primary/10 group-hover:text-primary/20 transition-colors'>
                 {/* <div className='mb-20 bg-white p-6 ambient-glow relative group hover:-translate-y-2 transition-transform duration-500'>
               <div className='absolute -top-20 -right-5 p-1 text-primary/10 group-hover:text-primary/20 transition-colors'> */}
@@ -261,8 +261,8 @@ const Stich = () => {
                 Chiesa di San Donato
               </h3>
               <p className='text-on-surface-variant font-body-lg mb-8'>
-                Unitevi a noi sotto il cielo aperto dell&apos;abbazia del XIII
-                secolo per un emozionante scambio di promesse.
+                Unitevi a noi per la celebrazione del rito del matrimonio nella
+                chiesa storica di Frossasco.
               </p>
               <div className='space-y-4 border-t border-stone-100 pt-8'>
                 <div className='flex items-start gap-4'>
@@ -390,7 +390,15 @@ const Stich = () => {
             </p> */}
           </div>
           <div className=' w-full flex justify-center items-center'>
-            <img src={laNostraGiornata}></img>
+            <img
+              src={laNostraGiornata}
+              style={{
+                width: "100%",
+                maxWidth: "450px",
+                height: "auto",
+              }}
+              alt='La nostra giornata'
+            />
             {/* <div className='bg-white p-12 ambient-glow relative group hover:-translate-y-2 transition-transform duration-500'>
               <div className='absolute top-0 right-0 p-8 text-primary/10 group-hover:text-primary/20 transition-colors'>
                 <span
@@ -511,11 +519,9 @@ const Stich = () => {
 
               <div className=' flex justify-center bg-cover bg-center bg-no-repeat'>
                 <img
-                  src={inostriricordiimg}
-                  style={{
-                    width: "60%",
-                    height: "auto",
-                  }}
+                  src={laNostraGiornata}
+                  className='w-full h-auto max-w-full'
+                  alt='La Nostra Giornata'
                 ></img>
               </div>
 
